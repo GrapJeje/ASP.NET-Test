@@ -49,7 +49,7 @@ public class WebServer
                     var result = (string)method.Invoke(null, null);
                     
                     var buffer = Encoding.UTF8.GetBytes(result);
-                    response.ContentType = "text/plain";
+                    response.ContentType = "text/html; charset=UTF-8";
                     response.StatusCode = 200;
                     response.OutputStream.Write(buffer, 0, buffer.Length);
                 }
