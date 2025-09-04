@@ -26,8 +26,6 @@ public class WebServer
         }
         
         listener.Start();
-        const bool shouldListen = true;
-
         do
         {
             context = listener.GetContext();
@@ -42,8 +40,6 @@ public class WebServer
             var output = response.OutputStream;
             output.Write(buffer, 0, buffer.Length);
             output.Close();
-        } while (shouldListen);
-        
-        listener.Stop();
+        } while (true);
     }
 }
