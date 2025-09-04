@@ -5,7 +5,7 @@ namespace ASPNET.app.Controllers;
 public class KaasController : Controller
 {
     [Route("kaas")]
-    public static string index()
+    public static string Index()
     {
         return "KaasController.index";
     }
