@@ -1,4 +1,4 @@
-﻿namespace ASPNET.attributes;
+﻿namespace ASPNET.app.attributes;
 
 [AttributeUsage(AttributeTargets.Method)]
 public class RouteAttribute : Attribute
